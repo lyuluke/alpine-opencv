@@ -22,8 +22,7 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
         jasper-dev \
         tiff-dev \
         libwebp-dev \
-        linux-headers \
-        python3-dev && \
+        linux-headers && \
     pip install numpy && \
     mkdir -p /opt && cd /opt && \
     wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip -O opencv.zip && \
